@@ -1,0 +1,23 @@
+{
+     "name": "@globules-io/cordova-plugin-installer-id",
+     "version": "1.0.0",
+     "description": "Cordova plugin to check the installer id on Android",
+     "author": {
+          "name": "Globules.io"
+     },
+     "license": "MIT",
+     "repository": {
+          "type": "git",
+          "url": "https://github.com/globules-io/cordova-plugin-installer-id"
+     },
+     "cordova": {
+          "id": "cordova-plugin-installer-id",
+          "platforms": [
+               "android"
+          ]
+     },
+     "keywords": [
+          "ecosystem:cordova",
+          "cordova-android"
+     ]
+}

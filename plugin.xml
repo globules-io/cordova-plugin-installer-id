@@ -1,0 +1,24 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="@globules-io/cordova-plugin-installer-id"
+        version="1.0.0">
+     <name>cordova-plugin-installer-id</name>
+     <description>Cordova plugin to check the installer id on Android</description>
+     <license>MIT</license>
+     <keywords>cordova,android,sideload</keywords>
+     <author email="info@globules.io">globules.io</author>
+     <repository url="https://github.com/globules-io/cordova-plugin-installer-id.git" />
+     <engines>
+          <engine name="cordova" version=">=10.0.0" />
+     </engines>
+     <platform name="android">         
+          <source-file src="src/android/InstallerId.java" target-dir="io/globules/plugin/installerid" />
+          <config-file target="res/xml/config.xml" parent="/*">
+               <feature name="InstallerId">
+                    <param name="android-package" value="io.globules.plugin.installerid" />
+               </feature>
+          </config-file>
+     </platform>
+     <js-module src="www/InstallerId.js" name="InstallerId">
+          <clobbers target="InstallerId" />
+     </js-module>
+</plugin>
