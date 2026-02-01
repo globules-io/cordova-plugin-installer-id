@@ -11,10 +11,10 @@
           <engine name="cordova" version=">=10.0.0" />
      </engines>
      <platform name="android">         
-          <source-file src="src/android/InstallerId.java" target-dir="io/globules/plugin/installerid" />
+          <source-file src="src/android/InstallerId.java" target-dir="io/globules/installerid" />
           <config-file target="res/xml/config.xml" parent="/*">
                <feature name="InstallerId">
-                    <param name="android-package" value="io.globules.plugin.installerid" />
+                    <param name="android-package" value="io.globules.InstallerId" />
                </feature>
           </config-file>
      </platform>

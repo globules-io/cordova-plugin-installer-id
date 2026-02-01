@@ -1,4 +1,4 @@
-package io.globules.plugin.installerid;
+package io.globules;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
