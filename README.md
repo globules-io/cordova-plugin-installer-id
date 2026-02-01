@@ -10,6 +10,7 @@ cordova plugin rm @globules-io/cordova-plugin-installer-id
 Android
 
 ## JS API
+Get the installer id
 ```bash
 InstallerId.getInstaller(function(installerId) {
     console.log("Installer ID:", installerId);
@@ -23,5 +24,12 @@ InstallerId.getInstaller(function(installerId) {
 }, function(err) {
     console.error("Error retrieving installer ID:", err);
 });
+```
+
+Check if app was sideloaded
+```bash
+InstallerId.sideLoaded(function(bool) {
+     console.log("Add sideLoaded ?", bool);
+}, function(err) {});
 ```
 
