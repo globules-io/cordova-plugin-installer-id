@@ -29,7 +29,7 @@ InstallerId.getInstaller(function(installerId) {
 Check if app was sideloaded
 ```bash
 InstallerId.sideLoaded(function(bool) {
-     console.log("Add sideLoaded ?", bool);
+     console.log("App sideLoaded ?", bool);
 }, function(err) {});
 ```
 
